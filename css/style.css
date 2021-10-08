@@ -1,0 +1,378 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:Nunito, sans-serif;
+    color: #1c1c1c;
+}
+
+h1,h2,h3{
+    font-family: Asap, sans-serif;
+    color: #000000;
+}
+
+.navbar{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #191970;
+}
+.navbar ol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar ol li, .navbar ol li a { 
+    text-decoration: none;
+    list-style: none;
+    color: #ffffff;
+    font-weight:800;
+    font-size: 32px;
+    font-family:Yellowtail,serif ;
+}
+.navbar ol li{
+    text-align: center;
+    width: 100%;
+}
+
+.navbar ol li a{
+    display:inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.botao{
+     color:#ffffff;
+     text-decoration: none;
+     padding:10px 30px;
+     background-color: #0a0a55;
+     font-size: .9em;
+     border-radius: 3px;
+}
+/*
+.botao2{
+    margin-left: 167px;
+}
+*/
+header{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../img//camera.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 20%;
+}
+
+header h1{
+    color:#ffffff;
+}
+
+header p{
+    margin-bottom: 2em;
+}
+
+#div-sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 10px 20px 20px;
+    background-color: #f1f1f1;
+    color: #1c1c1c;
+}
+
+#div-sobre h2{
+    color: #020101fb;  
+    font-size: 28px;
+    margin-bottom: 18px;
+}
+
+#div-sobre p{
+    margin-bottom: 2.1em;
+    max-width: 1000%;
+}
+
+#div-sobre .botao{
+    font-family: Asap;
+    background-color: black;
+    color:#f1f1f1 ;
+}
+
+#div-sobre .botao:hover{
+    background-color: #fff;
+    color: #0c0c57;
+    font-size: 15px;
+}
+
+/*Serviços*/
+#div-serviços{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:70px;
+}
+
+#div-serviços div{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:50px;
+    margin-left: 0 auto;
+    margin-right: 15px;
+}
+
+#div-serviços h2{
+    font-size: 28pt;
+}
+
+#div-serviços div h3{
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+#div-serviços div p{
+    text-align: center;
+}
+
+#serviço1:hover, #serviço2:hover, #serviço3:hover, #serviço4:hover{
+    background-color: rgb(243, 239, 239);
+    padding: 19px;
+    border-radius: 10%;
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: transform 1.5s;
+}
+
+/*Fotos*/
+#div-fotos{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    background-color: #f1f1f1;
+}
+
+#div-fotos h2{
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+#div-fotos p{
+    font-size: 25px;
+}
+
+#div-fotos .fotos img{
+    display:inline-block;
+    width:35.999999%;
+    height: auto;
+    margin:12px 55px 12px 75px;
+    box-shadow: 1px 1px 1px #050404dd;
+}
+
+#foto1:hover{
+  border: 6px groove #000000;
+  cursor: pointer;
+}
+
+#foto2:hover{
+    border: 9px double #2e4664;
+    cursor: pointer;
+}
+
+ #foto3:hover{
+   border: 8px double #9b8686;
+   cursor: pointer;
+}
+
+ #foto4:hover{
+    border-top: 8px ridge #b67a19;
+    border-left: 8px groove #F09301;
+    border-bottom: 8px groove #F09301;
+    border-right: 8px ridge #df8d0a;
+    cursor: pointer;
+}
+
+#foto5:hover{
+    border: 8px groove #778806;
+    cursor: pointer;
+}
+
+#foto6:hover{
+    border: 8px solid black;
+    border-top: 8px groove #2e4664 ;
+    cursor: pointer;
+}
+
+#foto7:hover{
+    border-top: 8px ridge #b67a19;
+    border-left: 8px solid #F09301;
+    border-bottom: 8px solid #F09301;
+    border-right: 8px solid #df8d0a;
+    cursor: pointer;
+}
+
+#foto8:hover{
+    border: 8px outset #a0a868;
+    cursor: pointer;
+}
+
+#foto9:hover{
+    border: 6px double black;
+    cursor: pointer;
+}
+
+#foto10:hover{
+    border-top: 8px ridge #b67a19;
+    border-left: 8px solid #F09301;
+    border-bottom: 8px solid #F09301;
+    border-right: 8px solid #df8d0a;
+    cursor: pointer;
+}
+
+.fotos img:hover{
+   transform:  scale(1.155);
+   transition: transform 2s;
+}
+
+/*Contado*/
+#div-contado{
+    display:flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#div-contado{
+    color:#000000;
+}
+
+/*Rodapé*/
+
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color:#191970;
+    color:#ffff;
+}
+
+footer a {
+        text-decoration:none;
+        color: #00ffff;
+}
+
+@media screen and (min-width:768px){
+    /*navbar*/
+
+    .navbar{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 40px;
+    }
+
+    .navbar h1{
+        color: #00ffff;
+        font-size: 59px;
+        font-family: -apple-system;
+        font-weight: bolder;
+        letter-spacing: 2px;
+        text-shadow: 1px 1px 2px #000;
+    }
+
+    .navbar ol{
+        flex-direction: row;
+        width: 50%;
+    }
+
+    .navbar ol li a{
+        font-size: 20pt;
+        margin-top: 12px;
+    }
+
+    .navbar ol li a:hover{
+        font-weight:900;
+        color:#000000ab;
+        font-size: 24pt;
+    }
+
+    /*Cabeçalho*/
+
+    header{
+        height: 600px;
+        height: 60vh;
+        justify-content: center;
+    }
+
+    /*Sobre*/
+    #div-sobre{
+        height: 450px;
+        height: 30vh;
+        justify-content: center;       
+        min-height:250px;
+    }
+
+    /*Serviços*/
+    #div-serviços{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width:1000px;
+        margin:0 auto;       
+    }
+
+    #div-serviços h2{
+        text-align: center;
+        width: 100%;
+    }
+    
+    #div-serviços div{
+        flex-grow: 1;
+        flex-basis: 150px;
+        padding: 0px 10px;
+    }
+
+    /*Fotos*/
+    #div-fotos{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    #div-fotos h2{
+        width:100%;
+        text-align: center;
+    }
+
+    #div-fotos p{
+        margin: 25px;
+        font-family: Asap, sans-serif;
+        color: #000000;
+    }
+
+
+    /*Contado*/
+    #div-contado{
+        flex-wrap: nowrap;
+        align-items: center;
+        max-width:1000%;
+        margin: 0 auto;
+    }
+
+    #div-contado h2,#div-contado p{
+        text-align: center;
+        width: 900px;
+        margin-top: 5px;
+    }
+    #div-contado p{
+        margin-left: 25px;
+    }
+}
